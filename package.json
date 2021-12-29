@@ -11,7 +11,7 @@
     "clean": "nwb clean-module && nwb clean-demo",
     "build:demo": "nwb build-demo",
     "build": "tsc",
-    "postinstall": "yarn && yarn build",
+    "postinstall": "yarn build",
     "prepublish": "yarn build",
     "lint": "yarn eslint . --ext .ts,.tsx",
     "release": "npx semantic-release",
@@ -26,7 +26,6 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.9",
     "@types/react-toggle": "^4.0.2",
-    "@types/smoothscroll-polyfill": "^0.3.1",
     "@types/styled-components": "^5.1.3",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
@@ -61,6 +60,7 @@
     "declarative"
   ],
   "dependencies": {
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "@types/smoothscroll-polyfill": "^0.3.1"
   }
 }
