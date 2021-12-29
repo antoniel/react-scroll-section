@@ -11,7 +11,7 @@
     "clean": "nwb clean-module && nwb clean-demo",
     "build:demo": "nwb build-demo",
     "build": "tsc",
-    "postinstall": "yarn build",
+    "postinstall": "yarn && yarn build",
     "prepublish": "yarn build",
     "lint": "yarn eslint . --ext .ts,.tsx",
     "release": "npx semantic-release",
