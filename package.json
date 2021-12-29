@@ -10,7 +10,6 @@
     "start": "nwb serve-react-demo",
     "clean": "nwb clean-module && nwb clean-demo",
     "build:demo": "nwb build-demo",
-    "prebuild": "yarn clean",
     "build": "tsc",
     "postinstall": "yarn build",
     "prepublish": "yarn build",
